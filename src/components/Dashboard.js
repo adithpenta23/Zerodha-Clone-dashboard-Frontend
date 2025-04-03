@@ -9,11 +9,10 @@ import Orders from "./Orders";
 import Positions from "./Positions";
 import Summary from "./Summary";
 import WatchList from "./WatchList";
-
-
-const Dashboard = () => {
+function Dashboard() {
   return (
     <div className="dashboard-container">
+        <WatchList />
       <div className="content">
         <Routes>
           <Route exact path="/" element={<Summary />} />
@@ -26,6 +25,6 @@ const Dashboard = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Dashboard;
